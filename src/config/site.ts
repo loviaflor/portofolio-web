@@ -33,10 +33,6 @@ export const siteConfig = {
   /** A PDF in `public/`, offered on the resume page. Leave empty to hide the button. */
   resumePdf: '',
 
-  /** The banner and preferences dialog. Set `enabled: false` to remove both. */
-  cookieConsent: {
-    enabled: true,
-  },
 
   socials: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
@@ -55,5 +51,4 @@ export const navigation: NavLink[] = [
 export const legalLinks: NavLink[] = [
   { label: 'Privacy', href: '/privacy/' },
   { label: 'Terms', href: '/terms/' },
-  { label: 'Cookies', href: '/cookies/' },
 ];
