@@ -1,7 +1,7 @@
 ---
+import About from '@/components/home/About.astro';
 import Hero from '@/components/home/Hero.astro';
-import Services from '@/components/home/Services.astro';
-import Testimonials from '@/components/home/Testimonials.astro';
+import Skills from '@/components/home/Skills.astro';
 import Icon from '@/components/ui/Icon.astro';
 import SectionHead from '@/components/ui/SectionHead.astro';
 import ProjectCard from '@/components/work/ProjectCard.astro';
@@ -15,8 +15,10 @@ const selected = projects.toSorted((a, b) => Number(b.data.featured) - Number(a.
 
 <BaseLayout>
   <Hero />
+  <About />
+  <Skills />
 
-  <section id="work" class="shell" aria-labelledby="work-title">
+  <section id="work" class="shell mt-20 sm:mt-28" aria-labelledby="work-title">
     <SectionHead id="work-title" eyebrow={work.eyebrow} title={work.title} text={work.text}>
       {projects.length > selected.length && (
         <a class="btn btn-ghost" href="/work/">
@@ -31,7 +33,4 @@ const selected = projects.toSorted((a, b) => Number(b.data.featured) - Number(a.
       ))}
     </div>
   </section>
-
-  <Services />
-  <Testimonials />
 </BaseLayout>

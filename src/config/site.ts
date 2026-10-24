@@ -4,48 +4,48 @@ export interface NavLink {
 }
 
 export const siteConfig = {
-  name: 'Maria',
-  title: 'Maria - Product designer portfolio',
+  name: 'Lovia Florencia Clarissa',
+  title: 'Lovia - Business Analyst portfolio',
   description:
-    'Maria is a product designer who turns dense workflows and fuzzy requirements into clear, trustworthy digital products. Selected work, case studies, and resume.',
+    'Lovia is a business analyst in Brisbane who turns complex requirements and messy data into clear, practical solutions.',
   siteUrl: 'https://maria.xocoweb.workers.dev',
   language: 'en',
-  locale: 'en_US',
-  dateLocale: 'en-US',
+  locale: 'en_AU',
+  dateLocale: 'en-AU',
   socialImage: '/og-image.png',
 
   author: {
-    name: 'Maria Ionescu',
-    role: 'Product Designer',
-    location: 'Lisbon, Portugal',
-    email: 'hello@example.com',
+    name: 'Lovia Florencia',
+    role: 'Business Analyst',
+    location: 'Jakarta, Indonesia',
+    email: 'loviaflorencia@gmail.com',
   },
 
   /** The pill above the homepage headline. Set `enabled: false` to remove it. */
   availability: {
-    enabled: true,
-    label: 'Available for new projects from January 2027',
+    enabled: false,
+    label: '',
   },
 
   /** The button at the end of the header and in the mobile menu. */
-  action: { label: 'Get in touch', href: 'mailto:hello@example.com' },
+  action: { label: 'Get in touch', href: 'mailto:loviaflorencia@gmail.com' },
 
   /** A PDF in `public/`, offered on the resume page. Leave empty to hide the button. */
   resumePdf: '',
 
-
   socials: [
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
-    { label: 'Dribbble', href: 'https://dribbble.com/' },
-    { label: 'Behance', href: 'https://www.behance.net/' },
-    { label: 'Instagram', href: 'https://www.instagram.com/' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/loviaflorencia/' },
+    { label: 'GitHub', href: 'https://github.com/loviaflor' },
+
   ] satisfies NavLink[],
 };
 
 export const navigation: NavLink[] = [
-  { label: 'Work', href: '/work/' },
-  { label: 'About', href: '/about/' },
-  { label: 'Resume', href: '/resume/' },
+  { label: 'Home', href: '/#home' },
+  { label: 'About', href: '/#about' },
+  { label: 'Skills', href: '/#skills' },
+  { label: 'Projects', href: '/#work' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 export const legalLinks: NavLink[] = [

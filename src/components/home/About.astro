@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import photo from '@/assets/images/formal-photo.jpeg';
+import { about } from '@/config/about';
+---
+
+<section id="about" class="shell mt-20 sm:mt-28" aria-labelledby="about-title">
+  <div class="reveal grid gap-12 border-t border-line pt-16 lg:grid-cols-[22rem_minmax(0,1fr)] lg:items-center lg:gap-16">
+    <Image
+      src={photo}
+      alt="Portrait of Lovia"
+      widths={[320, 480, 640]}
+      sizes="(min-width: 64rem) 22rem, 90vw"
+      class="aspect-4/5 w-full rounded-card object-cover object-top"
+    />
+    <div>
+      <p class="eyebrow">{about.eyebrow}</p>
+      <h2 id="about-title" class="mt-6 max-w-[18ch] text-section">
+        {about.title} <span class="serif">{about.highlight}</span>
+      </h2>
+      <p class="mt-6 max-w-2xl text-lead text-body">{about.summary}</p>
+    </div>
+  </div>
+</section>

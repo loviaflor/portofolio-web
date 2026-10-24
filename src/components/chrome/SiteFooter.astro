@@ -15,8 +15,8 @@ const year = new Date().getFullYear();
 ---
 
 {showClosing && (
-  <section class="shell mt-24 sm:mt-32" aria-labelledby="closing-title">
-    <div class="relative overflow-hidden rounded-[2rem] bg-night px-6 py-14 text-night-ink sm:px-12 sm:py-20 lg:px-20 lg:py-24">
+  <section id="contact" class="shell mt-24 sm:mt-32" aria-labelledby="closing-title">
+    <div class="relative overflow-hidden rounded-4xl bg-night px-6 py-14 text-night-ink sm:px-12 sm:py-20 lg:px-20 lg:py-24">
       <div class="closing-grid" aria-hidden="true" />
       <div class="relative">
         <p class="eyebrow text-night-muted">{closing.eyebrow}</p>
@@ -29,8 +29,8 @@ const year = new Date().getFullYear();
             {email}
             <Icon name="arrow-up-right" class="icon-nudge-diagonal size-4" />
           </a>
-          <a class="btn text-night-ink underline-offset-4 hover:underline" href="/resume/">
-            View resume
+          <a class="btn text-night-ink underline-offset-4 hover:underline" href="/#skills">
+            View skills
           </a>
         </div>
       </div>
@@ -56,11 +56,6 @@ const year = new Date().getFullYear();
         Pages
       </h2>
       <ul class="mt-4 grid gap-2.5">
-        <li>
-          <a class="footer-link" href="/">
-            Home
-          </a>
-        </li>
         {navigation.map((link) => (
           <li>
             <a class="footer-link" href={link.href}>

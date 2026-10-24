@@ -1,48 +1,43 @@
-export const hero = {
-  greeting: "Hi, I'm Maria.",
-  title: 'I design digital products that',
-  highlight: 'actually make sense.',
-  text: 'Ten-plus years helping teams turn messy problems into clear, useful experiences. Corporations, startups, scrappy independents: if there is a user confused somewhere, I want to fix that.',
-  primary: { label: 'See selected work', href: '/#work' },
-  secondary: { label: 'About me', href: '/about/' },
-  facts: [
-    { value: '10+', label: 'years in product design' },
-    { value: '40+', label: 'products shipped' },
-    { value: '12', label: 'design systems built' },
-  ],
-};
+   export const hero = {
+     greeting: "Hi, I'm",
+     firstName: 'Lovia',
+     otherNames: 'Florencia Clarissa',
+     text: 'A business analyst who bridges the gap between stakeholders, connecting the dots between people, process, and technology.',
+     primary: { label: 'See selected work', href: '/#work' },
+     secondary: { label: 'About me', href: '/#about' },
+   };
 
 export const work = {
   eyebrow: 'Selected work',
-  title: 'Case studies',
-  text: 'A few projects where clarity was the whole job: dense workflows, high stakes, and people who needed the product to get out of the way.',
+  title: 'Projects',
+  text: 'A few projects where I turned unclear requirements and scattered information into something teams could act on.',
   /** How many featured case studies the homepage shows. */
   limit: 4,
 };
 
 export const services = {
   eyebrow: 'What I do',
-  title: 'From fuzzy brief to shipped product',
+  title: 'From unclear brief to delivered solution',
   items: [
     {
       icon: 'lightbulb',
-      title: 'Product strategy',
-      text: 'Framing the real problem, mapping what users need first, and deciding what not to build.',
+      title: 'Requirements gathering',
+      text: 'Interviewing stakeholders and turning vague needs into clear, testable requirements.',
     },
     {
       icon: 'workflow',
-      title: 'UX and flows',
-      text: 'Research, journeys, and information architecture for workflows that carry real weight.',
+      title: 'Process mapping',
+      text: 'Documenting how work really happens today and finding where it can improve.',
     },
     {
       icon: 'layers',
-      title: 'Design systems',
-      text: 'Tokens, components, and documentation that keep a growing product coherent.',
+      title: 'Data analysis',
+      text: 'Using data to back up decisions and show what is working and what is not.',
     },
     {
       icon: 'pen-tool',
-      title: 'Interface craft',
-      text: 'High-fidelity UI, prototypes, and handoff details that survive contact with engineering.',
+      title: 'Documentation',
+      text: 'Writing user stories, specifications, and reports that teams can actually use.',
     },
   ],
 };
@@ -74,7 +69,7 @@ export const testimonials = {
 
 export const closing = {
   eyebrow: "Let's work together",
-  title: 'Got something worth building?',
+  title: 'Have a problem worth solving?',
   highlight: "Let's talk.",
-  text: 'I take on a few product design engagements each quarter, from a focused audit to a full redesign. Tell me what you are working on.',
+  text: 'I am open to business analyst opportunities and collaborations. Tell me what you are working on.',
 };
