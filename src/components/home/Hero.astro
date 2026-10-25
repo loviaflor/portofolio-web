@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-import photo from '@/assets/images/about-saya.jpeg';
+import photo from '@/assets/images/appreciationday25.jpg';
 import Icon from '@/components/ui/Icon.astro';
 import { hero } from '@/config/home';
 ---
 
 <section id="home" class="shell pt-14 pb-20 sm:pt-20 sm:pb-28 lg:pt-24" aria-labelledby="hero-title">
-  <div class="grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-center lg:gap-16">
+  <div class="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,30rem)] lg:items-center lg:gap-16">
     <div>
       <h1 id="hero-title" class="rise max-w-[17ch] text-headline">
         {hero.greeting} {hero.firstName} {hero.otherNames}
@@ -26,11 +26,11 @@ import { hero } from '@/config/home';
       <Image
         src={photo}
         alt="Portrait of Lovia"
-        widths={[320, 480, 640]}
-        sizes="(min-width: 64rem) 22rem, 90vw"
+        widths={[480, 720, 960]}
+        sizes="(min-width: 64rem) 30rem, 90vw"
         loading="eager"
         fetchpriority="high"
-        class="aspect-4/5 w-full rounded-card object-cover object-top"
+        class="aspect-4/3 w-full rounded-card object-cover object-center"
       />
     </div>
   </div>

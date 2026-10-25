@@ -7,9 +7,9 @@ const work = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      client: z.string(),
+      purpose: z.string(),
       summary: z.string(),
-      year: z.number().int(),
+      time: z.string(),
       role: z.string(),
       services: z.array(z.string()).default([]),
       duration: z.string().optional(),

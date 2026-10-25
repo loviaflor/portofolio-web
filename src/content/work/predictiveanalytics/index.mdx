@@ -1,0 +1,84 @@
+---
+title: "Medicine Prediction: Comparing Naive Bayes and k-NN Classifiers"
+purpose: "Predictive Analytics Course Project - University"
+summary: "A Python classification project in Google Colab that predicts a suitable drug type from patient profiles, comparing Gaussian Naive Bayes against k-Nearest Neighbors."
+time: "REPLACE WITH MONTH YEAR"
+role: "Data Analysis"
+services: [Python, Google Colab, Data Preprocessing, Classification Modeling, Model Evaluation]
+cover: ./medicine-cover.jpg
+coverAlt: "Screenshot of the Python code for the Medicine Prediction project in Google Colab"
+tint: '#d6e4f0'
+order: 6
+featured: true
+---
+
+For my Predictive Analytics course, I built a classification model in Google Colab that predicts which of five drugs suits a patient, based on their age, sex, blood pressure, cholesterol level, and sodium-to-potassium ratio.
+
+## The dataset
+
+The data contains 200 patient records, each labeled with one of five drug types: Amlodipine, Amoxicillin, Atenolol, Ciprofloxacin, or Simvastatin. There were no missing values, so the work focused on preparing the features for modeling.
+
+## What I did
+
+- **Prepared the data:** encoded sex as 0 and 1, one-hot encoded blood pressure and cholesterol, and converted the drug labels into numbers.
+- **Split it three ways:** 60% training, 20% validation, and 20% test, stratified so every set keeps the same mix of drugs.
+- **Built two models:** Gaussian Naive Bayes, and k-Nearest Neighbors with scaled features.
+- **Tuned k-NN:** tested odd values of k from 1 to 15 using 3-fold cross-validation scored on weighted F1.
+- **Evaluated both models:** accuracy, precision, recall, F1, and confusion matrices across training, validation, and test sets.
+
+## Results
+
+<div style={{ maxWidth: '40rem', marginInline: 'auto', marginBlock: '2rem', overflowX: 'auto' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'center', fontSize: '0.95rem' }}>
+    <thead>
+      <tr style={{ borderBottom: '1px solid var(--line-strong)' }}>
+        <th style={{ padding: '0.75rem', textAlign: 'left' }}>Model</th>
+        <th style={{ padding: '0.75rem' }}>Validation accuracy</th>
+        <th style={{ padding: '0.75rem' }}>Validation F1</th>
+        <th style={{ padding: '0.75rem' }}>Test accuracy</th>
+        <th style={{ padding: '0.75rem' }}>Test F1</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style={{ borderBottom: '1px solid var(--line)' }}>
+        <td style={{ padding: '0.75rem', textAlign: 'left' }}>Gaussian Naive Bayes</td>
+        <td style={{ padding: '0.75rem' }}>77.5%</td>
+        <td style={{ padding: '0.75rem' }}>0.766</td>
+        <td style={{ padding: '0.75rem' }}>85.0%</td>
+        <td style={{ padding: '0.75rem' }}>0.849</td>
+      </tr>
+      <tr style={{ borderBottom: '1px solid var(--line)' }}>
+        <td style={{ padding: '0.75rem', textAlign: 'left' }}>k-NN (k = 1)</td>
+        <td style={{ padding: '0.75rem' }}>85.0%</td>
+        <td style={{ padding: '0.75rem' }}>0.851</td>
+        <td style={{ padding: '0.75rem' }}>82.5%</td>
+        <td style={{ padding: '0.75rem' }}>0.822</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+k-NN scored higher on the validation set, so I selected it as the final model. On the test set, the two models ended up very close.
+
+## What I learned
+
+- **k = 1 memorizes the training data.** It scored 100% on training data but dropped on unseen data, a classic sign of overfitting.
+- **Small test sets are noisy.** With only 40 test patients, the 2.5-point gap between the models is a single patient, so the difference isn't strong evidence for either model.
+- **Accuracy hides weak spots.** Both models found Amlodipine, the most common drug, harder to recall, and often confused it with other drugs.
+- **Next steps I would try:** larger values of k, other models such as decision trees or random forests, and cross-validation across the full dataset for a more stable comparison.
+
+This is a classroom exercise on a small dataset and is not medical advice.
+
+## Explore the notebook
+
+<div style={{ display: 'flex', justifyContent: 'center', marginBlock: '2rem' }}>
+  <a
+    class="btn btn-primary"
+    style={{ color: 'var(--on-inverse)', textDecoration: 'none' }}
+    href="https://colab.research.google.com/drive/1t70Hqh4wKyZrA7uNwVl0lCbnW5P1CwrD?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Open the Google Colab notebook
+  </a>
+</div>

@@ -22,13 +22,13 @@ interface Props {
 }
 
 const { project, next } = Astro.props;
-const { title, client, summary, year, role, services, duration, team, cover, coverAlt, tint, url } = project.data;
+const { title, purpose, summary, time, role, services, duration, team, cover, coverAlt, tint, url } = project.data;
 const { Content } = await render(project);
 const share = await getImage({ src: cover, width: 1200, height: 630, fit: 'cover', position: 'top', format: 'png' });
 
 const meta = [
-  { label: 'Client', value: client },
-  { label: 'Year', value: String(year) },
+  { label: 'Purpose', value: purpose },
+  { label: 'Completed', value: time },
   { label: 'Role', value: role },
   duration && { label: 'Duration', value: duration },
   team && { label: 'Team', value: team },
@@ -36,7 +36,7 @@ const meta = [
 ---
 
 <BaseLayout
-  title={`${client} case study`}
+  title={`${purpose} case study`}
   description={summary}
   image={cover}
   imageAlt={coverAlt}
@@ -55,7 +55,7 @@ const meta = [
           <li aria-hidden="true">/</li>
           <li>
             <span aria-current="page" class="text-ink">
-              {client}
+              {purpose}
             </span>
           </li>
         </ol>
@@ -78,7 +78,7 @@ const meta = [
         </dl>
         {url && (
           <a class="btn btn-ghost btn-sm self-start" href={url} rel="noopener">
-            Visit {client}
+            Visit {purpose}
             <Icon name="arrow-up-right" class="icon-nudge-diagonal size-4" />
           </a>
         )}

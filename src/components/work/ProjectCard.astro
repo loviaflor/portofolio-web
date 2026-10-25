@@ -11,7 +11,7 @@ interface Props {
 }
 
 const { project, eager = false, headingLevel: Heading = 'h3' } = Astro.props;
-const { title, client, year, services, cover, coverAlt, tint } = project.data;
+const { title, purpose, time, services, cover, coverAlt, tint } = project.data;
 ---
 
 <article class="project-card reveal relative" style={`--tint: ${tint}`}>
@@ -33,8 +33,8 @@ const { title, client, year, services, cover, coverAlt, tint } = project.data;
     </span>
   </div>
   <div class="mt-5 flex items-center justify-between gap-4 text-sm text-muted">
-    <span class="font-medium text-ink">{client}</span>
-    <span>{year}</span>
+    <span class="font-medium text-ink">{purpose}</span>
+    <span>{time}</span>
   </div>
   <Heading class="mt-2 text-title">
     <a href={projectHref(project)} class="after:absolute after:inset-0 focus-visible:outline-none">
