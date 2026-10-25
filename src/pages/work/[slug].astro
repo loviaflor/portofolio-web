@@ -29,8 +29,6 @@ const share = await getImage({ src: cover, width: 1200, height: 630, fit: 'cover
 const meta = [
   { label: 'Purpose', value: purpose },
   { label: 'Completed', value: time },
-  { label: 'Role', value: role },
-  duration && { label: 'Duration', value: duration },
   team && { label: 'Team', value: team },
 ].filter((item): item is { label: string; value: string } => Boolean(item));
 ---
