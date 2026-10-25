@@ -1,11 +1,24 @@
 ---
 import { Image } from 'astro:assets';
+import Icon from '@/components/ui/Icon.astro';
 import SectionHead from '@/components/ui/SectionHead.astro';
 import { resume } from '@/config/resume';
 ---
 
 <section id="skills" class="shell mt-20 sm:mt-28" aria-labelledby="skills-title">
   <SectionHead id="skills-title" eyebrow="Skills" title="Skills and experience" />
+
+    <div class="reveal mt-10 flex">
+      <a
+        class="btn btn-primary"
+        href="https://docs.google.com/document/d/1cPvpdHpYmAfMfoWyFOYOoRD6HQk1v8OiFUKWIPIBSjQ/edit?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Download Full Resume
+        <Icon name="arrow-up-right" class="icon-nudge-diagonal size-4" />
+      </a>
+    </div>
 
   <div class="mt-12">
     <div class="resume-row reveal">
@@ -36,25 +49,10 @@ import { resume } from '@/config/resume';
       </ol>
     </div>
 
-    <div class="resume-row reveal">
-      <h3 class="eyebrow self-start">Education</h3>
-      <ul class="grid gap-6">
-        {resume.education.map((item) => (
-          <li class="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-1">
-            <span>
-              <span class="font-semibold">{item.title}</span>
-              <span class="text-muted">, {item.place}</span>
-            </span>
-            <span class="text-sm text-muted">{item.period}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-
     {resume.tools.length > 0 && (
       <div class="resume-row reveal">
         <h3 class="eyebrow self-start">Tools</h3>
-        <ul class="grid grid-cols-2 gap-3 lg:grid-cols-4">
+        <ul class="grid grid-cols-3 gap-3">
           {resume.tools.map((tool) => (
             <li class="flex items-center gap-3 rounded-panel border border-line bg-surface p-3.5">
               <span class="grid size-11 place-items-center rounded-xl border border-line bg-sunken">
@@ -66,6 +64,8 @@ import { resume } from '@/config/resume';
         </ul>
       </div>
     )}
+
+  
   </div>
 </section>
 

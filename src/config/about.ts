@@ -1,10 +1,10 @@
 export const about = {
   eyebrow: 'About',
-  title: 'I make complicated things feel',
-  highlight: 'clear and easy to use.',
+  title: 'I turn business needs into',
+  highlight: 'practical technology solutions.',
   text: "I'm Lovia, a business analyst focused on connecting real-world needs with technology that works",
-  summary: "I'm an Information Systems undergraduate ... and why.",
-  portraitAlt: 'Portrait of Maria smiling at her desk',
+  summary: "Im Lovia, Bachelor of Information Systems, specializing in Business Analytics. Through previous experience, I’ve developed an interest in understanding business problems, improving workflows, and translating requirements into actionable solutions. I enjoy bringing clarity to complex problems and help teams build solutions that address real business needs.",
+  portraitAlt: 'Portrait of Lovia',
   sections: [
     {
       title: 'Background',

@@ -6,7 +6,7 @@ interface Props {
   frontmatter: {
     title: string;
     description: string;
-    /** Shown as "Last updated", in `YYYY-MM-DD`. */
+    /** Shown as "Last updated", in `2026-10-20`. */
     updated: string;
   };
 }
@@ -25,10 +25,7 @@ const updatedDate = new Date(`${updated}T00:00:00Z`);
       {description}
     </p>
     <p class="rise mt-4 text-sm text-muted" style="--rise-step: 2">
-      Last updated{' '}
-      <time datetime={updated}>
-        {updatedDate.toLocaleDateString(siteConfig.dateLocale, { dateStyle: 'long', timeZone: 'UTC' })}
-      </time>
+      Last updated{' 2026'}
     </p>
   </header>
   <div class="shell mt-14 sm:mt-20">

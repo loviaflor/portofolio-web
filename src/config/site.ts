@@ -7,8 +7,8 @@ export const siteConfig = {
   name: 'Lovia Florencia Clarissa',
   title: 'Lovia - Business Analyst portfolio',
   description:
-    'Lovia is a business analyst in Brisbane who turns complex requirements and messy data into clear, practical solutions.',
-  siteUrl: 'https://maria.xocoweb.workers.dev',
+    'Lovia is a business analyst in who turns complex requirements and messy data into clear, practical solutions.',
+  siteUrl: 'https://www.linkedin.com/in/loviaflorencia/',
   language: 'en',
   locale: 'en_AU',
   dateLocale: 'en-AU',
@@ -36,6 +36,7 @@ export const siteConfig = {
   socials: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/loviaflorencia/' },
     { label: 'GitHub', href: 'https://github.com/loviaflor' },
+    { label: 'Instagram', href: 'https://www.instagram.com/loviaflorencia/' },
 
   ] satisfies NavLink[],
 };

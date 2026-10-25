@@ -1,7 +1,9 @@
+import googlecolab from '@/assets/logos/googlecolab.svg';
+import java from '@/assets/logos/java.svg';
+import mysql from '@/assets/logos/mysql.svg';
+import tableau from '@/assets/logos/tableau.svg';
 import figma from '@/assets/logos/figma.svg';
-import framer from '@/assets/logos/framer.svg';
-import shopify from '@/assets/logos/shopify.svg';
-import webflow from '@/assets/logos/webflow.svg';
+import powerbi from '@/assets/logos/powerbi.svg';
 
 export const resume = {
   eyebrow: 'Resume',
@@ -16,46 +18,48 @@ export const resume = {
   ],
   experience: [
     {
-      role: 'Lead Product Designer',
-      company: 'Independent',
-      period: '2021 - Present',
-      text: 'Leading interface design, product strategy, and design systems work for SaaS and service platforms across legal, nonprofit, and property.',
+      role: 'Business Analyst Intern',
+      company: 'PT Bank Central Asia Tbk',
+      period: '2026 - 2027',
+      text: 'As a Business Analyst Intern in the Information Technology Department at BCA, I support initiatives related to system enhancement and operational improvement within the unit responsible for Data Center services and infrastructure. In this role, I collaborate with internal stakeholders to gather business requirements, analyze user needs, and translate them into detailed requirement documents. Im also involved in conducting User Acceptance Testing (UAT) for feature improvements, and data sorting, validation, and reconciliation of staff records to support administrative and operational processes.',
     },
     {
-      role: 'Senior Product Designer',
-      company: 'Northbound Studio',
-      period: '2017 - 2021',
-      text: "Designed workflows, dashboards, and multi-platform products for startup and enterprise clients. Built the studio's shared component library.",
+      role: 'Vice Project Manager',
+      company: 'StartUp Project by DWDG BINUS x Contigo Mobility',
+      period: 'May-Jul 2025',
+      text: "As part of Do Well Do Good (DWDG) BINUS University, a student-led business and consulting organization, I served as Vice Project Manager for its two-month Startup Project with Contigo Mobility. I coordinated a cross-functional team of 8, tracked project milestones and deliverables, and aligned team efforts to ensure the proposed solutions addressed the client’s business needs.",
     },
-    {
-      role: 'UI/UX Designer',
-      company: 'In-house product teams',
-      period: '2014 - 2017',
-      text: 'Built core interface patterns, user flows, and production-ready visual systems for web and mobile products.',
-    },
+    // {
+    //   role: 'UI/UX Designer',
+    //   company: 'In-house product teams',
+    //   period: '2014 - 2017',
+    //   text: 'Built core interface patterns, user flows, and production-ready visual systems for web and mobile products.',
+    // },
   ],
   capabilities: [
     {
-      title: 'Product strategy',
-      text: 'Framing problems, prioritizing experience decisions, and aligning product goals with user value.',
+      title: 'Business Analysis',
+      text: 'Uncovering underlying business needs, translating ambiguous requirements into clear specifications, and defining what successful solutions should achieve.',
     },
     {
-      title: 'UI systems',
-      text: 'Interface languages that scale across flows, features, and implementation teams.',
+      title: 'Business Intelligence',
+      text: 'Combining SQL-based data exploration with Power BI visualization to transform business data into accessible reports, performance metrics, and actionable insights.',
     },
     {
-      title: 'Execution',
-      text: 'Wireframes through high-fidelity UI, refinement, and developer-ready handoff.',
+      title: 'Project Management',
+      text: 'Organizing tasks, aligning team priorities, tracking progress, and coordinating deliverables to keep projects moving toward their goals.',
     },
   ],
   education: [
-    { title: 'MA, Interaction Design', place: 'University of the Arts', period: '2014' },
-    { title: 'BA, Visual Communication', place: 'National University of Arts', period: '2012' },
+    // { title: 'Bachelor of 000', place: '000 University', period: '1999' },
+    // { title: '000', place: '000 High School', period: '1999' },
   ],
-  tools: [
+    tools: [
+    { name: 'Tableau', logo: tableau, dark: false },
+    { name: 'PowerBI', logo: powerbi, dark: false },
     { name: 'Figma', logo: figma, dark: false },
-    { name: 'Framer', logo: framer, dark: true },
-    { name: 'Webflow', logo: webflow, dark: false },
-    { name: 'Shopify', logo: shopify, dark: false },
+    { name: 'Google Colab', logo: googlecolab, dark: false },
+    { name: 'MySQL', logo: mysql, dark: false },
+    { name: 'Java', logo: java, dark: false },
   ],
 };

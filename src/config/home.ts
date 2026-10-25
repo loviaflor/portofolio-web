@@ -2,7 +2,7 @@
      greeting: "Hi, I'm",
      firstName: 'Lovia',
      otherNames: 'Florencia Clarissa',
-     text: 'A business analyst who bridges the gap between stakeholders, connecting the dots between people, process, and technology.',
+     text: 'A Business Analyst that turns people’s needs into technological solutions.',
      primary: { label: 'See selected work', href: '/#work' },
      secondary: { label: 'About me', href: '/#about' },
    };
@@ -10,9 +10,9 @@
 export const work = {
   eyebrow: 'Selected work',
   title: 'Projects',
-  text: 'A few projects where I turned unclear requirements and scattered information into something teams could act on.',
+  text: 'A showcase of my projects and competitions',
   /** How many featured case studies the homepage shows. */
-  limit: 4,
+  limit: 9,
 };
 
 export const services = {
@@ -42,30 +42,30 @@ export const services = {
   ],
 };
 
-export const testimonials = {
-  eyebrow: 'Kind words',
-  title: 'What teams say',
-  items: [
-    {
-      quote:
-        'Maria took a dashboard our users tolerated and made it the part of the product they open first. She asked the questions nobody else on the team was asking.',
-      name: 'Daniel Brooks',
-      role: 'Head of Product, Nextpoint',
-    },
-    {
-      quote:
-        'She has a rare way of making complicated systems feel calm. Our caseworkers stopped asking for training after the redesign shipped.',
-      name: 'Priya Shah',
-      role: 'Director of Operations, b.combs',
-    },
-    {
-      quote:
-        'Equal parts strategist and craftsperson. Every review with Maria left us with fewer screens and a clearer product.',
-      name: 'Lukas Weber',
-      role: 'Founder, Nestara',
-    },
-  ],
-};
+// export const testimonials = {
+//   eyebrow: 'Kind words',
+//   title: 'What teams say',
+//   items: [
+//     {
+//       quote:
+//         'Maria took a dashboard our users tolerated and made it the part of the product they open first. She asked the questions nobody else on the team was asking.',
+//       name: 'Daniel Brooks',
+//       role: 'Head of Product, Nextpoint',
+//     },
+//     {
+//       quote:
+//         'She has a rare way of making complicated systems feel calm. Our caseworkers stopped asking for training after the redesign shipped.',
+//       name: 'Priya Shah',
+//       role: 'Director of Operations, b.combs',
+//     },
+//     {
+//       quote:
+//         'Equal parts strategist and craftsperson. Every review with Maria left us with fewer screens and a clearer product.',
+//       name: 'Lukas Weber',
+//       role: 'Founder, Nestara',
+//     },
+//   ],
+// };
 
 export const closing = {
   eyebrow: "Let's work together",
