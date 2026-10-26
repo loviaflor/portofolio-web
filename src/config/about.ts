@@ -3,7 +3,7 @@ export const about = {
   title: 'I turn business needs into',
   highlight: 'practical technology solutions.',
   text: "I'm Lovia, a business analyst focused on connecting real-world needs with technology that works",
-  summary: "Im Lovia, Bachelor of Information Systems, specializing in Business Analytics. Through previous experience, I’ve developed an interest in understanding business problems, improving workflows, and translating requirements into actionable solutions. I enjoy bringing clarity to complex problems and help teams build solutions that address real business needs.",
+  summary: "I'm Lovia, Bachelor of Information Systems, specializing in Business Analytics. Through previous experience, I’ve developed an interest in understanding business problems, improving workflows, and translating requirements into actionable solutions. I enjoy bringing clarity to complex problems and help teams build solutions that address real business needs.",
   portraitAlt: 'Portrait of Lovia',
   sections: [
     {

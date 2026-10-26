@@ -18,7 +18,7 @@ For my Predictive Analytics course, I built a classification model in Google Col
 
 The data contains 200 patient records, each labeled with one of five drug types: Amlodipine, Amoxicillin, Atenolol, Ciprofloxacin, or Simvastatin. There were no missing values, so the work focused on preparing the features for modeling.
 
-## What I did
+## The Process
 
 - **Prepared the data:** encoded sex as 0 and 1, one-hot encoded blood pressure and cholesterol, and converted the drug labels into numbers.
 - **Split it three ways:** 60% training, 20% validation, and 20% test, stratified so every set keeps the same mix of drugs.
@@ -64,10 +64,10 @@ k-NN scored higher on the validation set, so I selected it as the final model. O
 
 - **k = 1 memorizes the training data.** It scored 100% on training data but dropped on unseen data, a classic sign of overfitting.
 - **Small test sets are noisy.** With only 40 test patients, the 2.5-point gap between the models is a single patient, so the difference isn't strong evidence for either model.
-- **Accuracy hides weak spots.** Both models found Amlodipine, the most common drug, harder to recall, and often confused it with other drugs.
-- **Next steps I would try:** larger values of k, other models such as decision trees or random forests, and cross-validation across the full dataset for a more stable comparison.
 
-This is a classroom exercise on a small dataset and is not medical advice.
+Instead of trusting a single accuracy number, a model’s score is only meaningful if you test it on data it hasn’t seen, which is why a comparison between Naive Bayes and k-NN is done in this project.
+
+Disclaimer: This project is a classroom exercise on a small dummy dataset and is not supported by medical knowledge.
 
 ## Explore the notebook
 
